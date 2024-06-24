@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>747725</id>
+      <name>sword_panup</name>
+      <size>21</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-06-18 22:50:25.679567+00:00</created>
+      <updated>2024-06-18 23:11:58.872720+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>20</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>965827</id>
+          <start>0</start>
+          <stop>20</stop>
+          <url>https://app.cvat.ai/api/jobs/963948</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>jessica3</username>
+        <email>jeshuang@g.hmc.edu</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>pommel</name>
+          <color>#fa3253</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>handle</name>
+          <color>#fa7dbb</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>blade</name>
+          <color>#4ee27f</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>rock</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2024-06-18 23:12:24.809485+00:00</dumped>
+  </meta>
+  <image id="0" name="0001.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="536.34" ytl="0.00" xbr="544.24" ybr="12.70" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="532.03" ytl="97.47" xbr="547.11" ybr="136.98" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="523.41" ytl="162.13" xbr="556.45" ybr="178.65" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="563.19" ytl="537.41" xbr="595.95" ybr="549.48" z_order="0">
+    </box>
+  </image>
+  <image id="1" name="0005.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="536.25" ytl="41.00" xbr="545.23" ybr="52.53" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="532.75" ytl="137.34" xbr="547.22" ybr="178.25" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="524.05" ytl="205.09" xbr="556.38" ybr="224.84" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="564.05" ytl="582.24" xbr="596.81" ybr="596.04" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="0010.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="533.87" ytl="94.85" xbr="546.46" ybr="106.41" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="531.63" ytl="191.21" xbr="548.43" ybr="231.02" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="522.10" ytl="257.57" xbr="559.01" ybr="276.64" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="560.29" ytl="632.00" xbr="594.85" ybr="646.17" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="0015.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="534.80" ytl="149.70" xbr="545.30" ybr="160.70" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="531.74" ytl="245.32" xbr="548.76" ybr="285.93" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.88" ytl="312.51" xbr="558.61" ybr="332.21" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="561.00" ytl="685.75" xbr="595.34" ybr="702.77" z_order="0">
+    </box>
+  </image>
+  <image id="4" name="0020.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="533.38" ytl="203.04" xbr="546.82" ybr="214.39" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="532.18" ytl="298.29" xbr="548.01" ybr="338.60" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="522.33" ytl="365.78" xbr="559.06" ybr="383.99" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="560.55" ytl="738.73" xbr="596.98" ybr="756.94" z_order="0">
+    </box>
+  </image>
+  <image id="5" name="0025.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="535.28" ytl="256.38" xbr="546.00" ybr="267.79" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="531.21" ytl="351.84" xbr="548.83" ybr="390.20" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.53" ytl="420.27" xbr="558.51" ybr="439.28" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="559.20" ytl="790.75" xbr="598.77" ybr="811.83" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="0030.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="534.30" ytl="311.54" xbr="545.97" ybr="321.04" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="531.86" ytl="406.29" xbr="548.70" ybr="449.49" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.47" ytl="473.03" xbr="558.48" ybr="490.89" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="560.16" ytl="845.25" xbr="601.92" ybr="864.21" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="0035.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="533.80" ytl="363.16" xbr="546.28" ybr="377.08" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="531.86" ytl="459.99" xbr="549.14" ybr="503.31" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.30" ytl="527.55" xbr="558.74" ybr="544.47" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="558.70" ytl="897.63" xbr="598.80" ybr="920.03" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="0040.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="533.88" ytl="418.25" xbr="546.84" ybr="431.21" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="530.79" ytl="512.99" xbr="549.63" ybr="557.06" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.27" ytl="581.20" xbr="558.59" ybr="598.65" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="558.57" ytl="950.03" xbr="598.46" ybr="973.07" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="0045.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="534.70" ytl="472.90" xbr="545.40" ybr="483.80" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="530.55" ytl="567.94" xbr="549.45" ybr="611.04" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="520.85" ytl="635.34" xbr="557.85" ybr="652.04" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="559.13" ytl="1003.23" xbr="603.09" ybr="1024.38" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="0050.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="534.77" ytl="526.99" xbr="545.82" ybr="538.22" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="531.03" ytl="621.72" xbr="549.00" ybr="665.09" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.01" ytl="689.63" xbr="557.64" ybr="706.22" z_order="0">
+    </box>
+    <box label="rock" source="manual" occluded="0" xtl="558.58" ytl="1054.59" xbr="592.13" ybr="1078.49" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="0055.png" width="1080" height="1080">
+    <box label="handle" source="manual" occluded="0" xtl="530.43" ytl="675.20" xbr="549.75" ybr="718.88" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.01" ytl="743.42" xbr="557.51" ybr="760.72" z_order="0">
+    </box>
+    <box label="pommel" source="manual" occluded="0" xtl="535.36" ytl="579.76" xbr="546.52" ybr="590.44" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="0060.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="534.16" ytl="634.12" xbr="545.20" ybr="644.92" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="530.61" ytl="729.21" xbr="549.45" ybr="772.29" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.31" ytl="798.01" xbr="558.22" ybr="817.91" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="0065.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="534.45" ytl="687.90" xbr="545.65" ybr="698.48" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="531.12" ytl="783.15" xbr="548.74" ybr="826.87" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.27" ytl="852.79" xbr="558.77" ybr="869.55" z_order="0">
+    </box>
+  </image>
+  <image id="14" name="0070.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="535.23" ytl="741.35" xbr="545.98" ybr="752.40" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="531.95" ytl="837.50" xbr="549.26" ybr="881.40" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.79" ytl="906.48" xbr="558.82" ybr="924.10" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="0075.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="534.94" ytl="796.38" xbr="545.65" ybr="806.93" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="532.05" ytl="892.31" xbr="549.51" ybr="934.30" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.34" ytl="960.73" xbr="558.84" ybr="977.50" z_order="0">
+    </box>
+  </image>
+  <image id="16" name="0080.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="535.35" ytl="848.67" xbr="546.10" ybr="859.42" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="532.66" ytl="945.42" xbr="548.79" ybr="988.11" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="522.51" ytl="1014.99" xbr="557.45" ybr="1031.71" z_order="0">
+    </box>
+  </image>
+  <image id="17" name="0085.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="535.65" ytl="903.01" xbr="546.40" ybr="913.76" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="532.07" ytl="999.76" xbr="549.09" ybr="1042.76" z_order="0">
+    </box>
+    <box label="blade" source="manual" occluded="0" xtl="521.61" ytl="1068.14" xbr="558.64" ybr="1080.00" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="0090.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="534.45" ytl="956.76" xbr="545.20" ybr="967.51" z_order="0">
+    </box>
+    <box label="handle" source="manual" occluded="0" xtl="531.17" ytl="1053.51" xbr="548.79" ybr="1079.19" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="0095.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="534.75" ytl="1012.00" xbr="545.80" ybr="1023.35" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="0100.png" width="1080" height="1080">
+    <box label="pommel" source="manual" occluded="0" xtl="535.05" ytl="1066.05" xbr="545.20" ybr="1077.10" z_order="0">
+    </box>
+  </image>
+</annotations>

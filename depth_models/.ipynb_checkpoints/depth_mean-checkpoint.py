@@ -24,6 +24,7 @@ def depth_process(depth_model, object_movement, graph = True):
     camPos_file = f"{depth_model}/cam_position/{object_movement}_camposition.txt"
 
     (all_bbox, labels) = process_annotations(annotated_file_path, object_movement)
+    print(labels)
 
     result = []
     real_blender = []

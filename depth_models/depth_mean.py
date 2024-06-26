@@ -18,8 +18,7 @@ def depth_process(depth_model, object_movement, graph = True):
     real_blender = []
 
     for i in range(len(all_bbox)):
-        result_mean = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[0]
-        result_median = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[1]
+        result_mean = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[0]        # result_median = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[1]
         result.append(result_mean)
     
     for j in range(len(labels)):
@@ -100,6 +99,8 @@ def depth_median_mean(bbox, depth_path, depth_fend):
 
       depth_mean[i] = np.mean(depth_patch)
       depth_median[i] = np.median(depth_patch)
+
+
 
   normalized_mean = [x/depth_mean[frameRef] for x in depth_mean]
   normalized_median = [x/depth_median[frameRef] for x in depth_median]

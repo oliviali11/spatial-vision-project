@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <task>
+      <id>762529</id>
+      <name>garfield_panup</name>
+      <size>21</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-06-26 21:54:51.516023+00:00</created>
+      <updated>2024-06-26 22:03:07.121064+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>20</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>988311</id>
+          <start>0</start>
+          <stop>20</stop>
+          <url>https://app.cvat.ai/api/jobs/986411</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>jessica3</username>
+        <email>jeshuang@g.hmc.edu</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>pommel</name>
+          <color>#fa3253</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>handle</name>
+          <color>#fa7dbb</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>blade</name>
+          <color>#4ee27f</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>rock</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>head</name>
+          <color>#9c8cf3</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>nose</name>
+          <color>#66ff66</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>stomach</name>
+          <color>#ff6a4d</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>foot</name>
+          <color>#33ddff</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </task>
+    <dumped>2024-06-26 22:03:24.549760+00:00</dumped>
+  </meta>
+  <image id="0" name="0001.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.63" ytl="663.02" xbr="459.61" ybr="688.72" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="525.83" ytl="557.31" xbr="556.43" ybr="596.43" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.41" ytl="324.90" xbr="547.52" ybr="340.38" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="532.11" ytl="229.97" xbr="549.16" ybr="246.50" z_order="0">
+    </box>
+  </image>
+  <image id="1" name="0005.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="439.40" ytl="686.36" xbr="460.38" ybr="712.07" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.78" ytl="581.13" xbr="555.38" ybr="620.25" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.41" ytl="350.39" xbr="547.52" ybr="365.87" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.45" ytl="254.23" xbr="548.49" ybr="270.75" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="0010.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="439.40" ytl="717.05" xbr="460.38" ybr="742.75" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="523.95" ytl="612.03" xbr="554.55" ybr="651.15" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.64" ytl="381.13" xbr="547.74" ybr="396.62" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.45" ytl="284.66" xbr="548.49" ybr="301.18" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="0015.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.88" ytl="748.00" xbr="459.86" ybr="773.70" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.89" ytl="643.04" xbr="555.49" ybr="682.17" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="531.73" ytl="413.76" xbr="546.84" ybr="429.25" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.45" ytl="315.08" xbr="548.49" ybr="331.61" z_order="0">
+    </box>
+  </image>
+  <image id="4" name="0020.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.88" ytl="777.64" xbr="459.86" ybr="803.34" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="523.95" ytl="675.00" xbr="554.55" ybr="714.12" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.18" ytl="446.40" xbr="547.29" ybr="461.88" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.18" ytl="346.03" xbr="548.23" ybr="362.56" z_order="0">
+    </box>
+  </image>
+  <image id="5" name="0025.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.88" ytl="808.85" xbr="459.86" ybr="834.56" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.89" ytl="705.07" xbr="555.49" ybr="744.20" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.20" ytl="480.42" xbr="547.31" ybr="495.91" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.71" ytl="375.67" xbr="548.76" ybr="392.20" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="0030.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="439.40" ytl="839.80" xbr="460.38" ybr="865.51" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="523.95" ytl="735.15" xbr="554.55" ybr="774.27" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.38" ytl="512.48" xbr="547.49" ybr="527.97" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.97" ytl="406.10" xbr="549.02" ybr="422.62" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="0035.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.88" ytl="870.49" xbr="459.86" ybr="896.20" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.86" ytl="769.64" xbr="555.46" ybr="808.76" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.02" ytl="545.09" xbr="547.13" ybr="560.57" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="530.66" ytl="436.26" xbr="547.71" ybr="452.79" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="0040.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.88" ytl="900.39" xbr="459.86" ybr="926.10" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.86" ytl="800.46" xbr="555.46" ybr="839.59" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.02" ytl="578.05" xbr="547.13" ybr="593.54" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="532.76" ytl="465.90" xbr="549.80" ybr="482.43" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="0045.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.88" ytl="931.87" xbr="459.86" ybr="957.57" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.33" ytl="830.14" xbr="554.94" ybr="869.27" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.20" ytl="610.66" xbr="547.31" ybr="626.15" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="530.40" ytl="496.07" xbr="547.45" ybr="512.59" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="0050.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.61" ytl="961.77" xbr="459.60" ybr="987.48" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.33" ytl="863.04" xbr="554.94" ybr="902.16" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.20" ytl="642.90" xbr="547.31" ybr="658.39" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.71" ytl="526.75" xbr="548.76" ybr="543.28" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="0055.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.88" ytl="992.72" xbr="459.86" ybr="1018.43" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.33" ytl="894.37" xbr="554.94" ybr="933.49" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.39" ytl="675.32" xbr="547.49" ybr="690.81" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.45" ytl="557.44" xbr="548.49" ybr="573.97" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="0060.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.88" ytl="1023.15" xbr="459.86" ybr="1048.85" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.33" ytl="924.91" xbr="554.94" ybr="964.04" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.11" ytl="707.81" xbr="547.22" ybr="723.29" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.18" ytl="588.39" xbr="548.23" ybr="604.92" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="0065.png" width="1080" height="1080">
+    <box label="foot" source="manual" occluded="0" xtl="438.35" ytl="1053.31" xbr="459.34" ybr="1079.02" z_order="0">
+    </box>
+    <box label="stomach" source="manual" occluded="0" xtl="524.33" ytl="957.81" xbr="554.94" ybr="996.93" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.72" ytl="740.14" xbr="547.83" ybr="755.62" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.45" ytl="617.77" xbr="548.49" ybr="634.29" z_order="0">
+    </box>
+  </image>
+  <image id="14" name="0070.png" width="1080" height="1080">
+    <box label="stomach" source="manual" occluded="0" xtl="524.33" ytl="987.57" xbr="554.94" ybr="1026.69" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.42" ytl="772.47" xbr="547.52" ybr="787.95" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.45" ytl="650.29" xbr="548.49" ybr="666.82" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="0075.png" width="1080" height="1080">
+    <box label="stomach" source="manual" occluded="0" xtl="524.33" ytl="1019.68" xbr="554.94" ybr="1058.81" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="531.81" ytl="805.10" xbr="546.92" ybr="820.59" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.18" ytl="679.67" xbr="548.23" ybr="696.20" z_order="0">
+    </box>
+  </image>
+  <image id="16" name="0080.png" width="1080" height="1080">
+    <box label="stomach" source="manual" occluded="0" xtl="524.56" ytl="1057.40" xbr="555.16" ybr="1079.69" z_order="0">
+    </box>
+    <box label="nose" source="manual" occluded="0" xtl="532.41" ytl="837.74" xbr="547.52" ybr="853.23" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="530.92" ytl="710.89" xbr="547.97" ybr="727.41" z_order="0">
+    </box>
+  </image>
+  <image id="17" name="0085.png" width="1080" height="1080">
+    <box label="nose" source="manual" occluded="0" xtl="532.72" ytl="870.38" xbr="547.83" ybr="885.86" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.44" ytl="741.84" xbr="548.49" ybr="758.36" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="0090.png" width="1080" height="1080">
+    <box label="nose" source="manual" occluded="0" xtl="532.11" ytl="903.16" xbr="547.22" ybr="918.65" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="532.02" ytl="772.74" xbr="549.06" ybr="789.27" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="0095.png" width="1080" height="1080">
+    <box label="nose" source="manual" occluded="0" xtl="532.87" ytl="934.88" xbr="547.98" ybr="950.37" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.80" ytl="802.69" xbr="548.85" ybr="819.21" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="0100.png" width="1080" height="1080">
+    <box label="nose" source="manual" occluded="0" xtl="532.26" ytl="967.82" xbr="547.37" ybr="983.31" z_order="0">
+    </box>
+    <box label="head" source="manual" occluded="0" xtl="531.58" ytl="833.95" xbr="548.63" ybr="850.47" z_order="0">
+    </box>
+  </image>
+</annotations>

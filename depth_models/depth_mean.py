@@ -6,17 +6,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 
-def batch_process():
-    # grabs all the folders one at a time
-    folders = glob.glob(path_to_folders)
-    
-    for folder in folders:
-        depth_process(folder)
-
-"""
-    depth_process runs depth processing on a specified object + movement
-    Ex: depth_process(sword_panover)
-"""
 def depth_process(depth_model, object_movement, graph = True):
     annotated_file_path = f"{depth_model}/annotated/{object_movement}/{object_movement}_annotated.xml"
     depth_path = f"{depth_model}/depth_array/{object_movement}/0"
@@ -86,10 +75,12 @@ def process_annotations(annotated_file_path, object_movement):
             ybr = int(float(box.get('ybr')))
 
             idx = labelsMap[label]
+
             bboxes[idx].append([image_name[1:4], [xtl + 1, ytl + 1, xbr, ybr]])
     return (bboxes, grabLabels)
 
 def depth_median_mean(bbox, depth_path, depth_fend):
+  
   start_index = '001'
   size_bbox = len(bbox)
   frameRef = size_bbox // 2

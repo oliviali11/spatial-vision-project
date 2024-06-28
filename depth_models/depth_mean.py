@@ -35,7 +35,7 @@ def graph_plot(data, real_blender, graph_title, labels):
     plt.xlabel('Frame')
     plt.ylabel('Normalized Depth')
     x = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
-    colors = ['r','y','g','c','m','b','k']
+    colors = ['r','y','g','c','m','b','k', 'orange', 'purple', 'brown']
 
     for i in range(len(data)):
         plt.plot(x[:len(data[i])], data[i], colors[i], label=labels[i])

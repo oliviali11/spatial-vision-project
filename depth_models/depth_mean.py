@@ -5,28 +5,33 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 import math
+from pypfm import PFMLoader
 
 def depth_process(depth_model, object_movement, graph = True):
-    annotated_file_path = f"{depth_model}/annotated/{object_movement}/{object_movement}_annotated.xml"
-    depth_path = f"{depth_model}/depth_array/{object_movement}/0"
-    depth_fend = "_depth.npy"
-    camPos_file = f"{depth_model}/cam_position/{object_movement}_camposition.txt"
+    if depth_model == 'depth_anywhere':
+      annotated_file_path = f"{depth_model}/annotated/{object_movement}/{object_movement}_annotated.xml"
+      depth_path = f"{depth_model}/depth_array/{object_movement}/0"
+      depth_fend = "_depth.npy"
+      camPos_file = f"{depth_model}/cam_position/{object_movement}_camposition.txt"
 
-    (all_bbox, labels) = process_annotations(annotated_file_path, object_movement)
+      (all_bbox, labels) = process_annotations(annotated_file_path, object_movement)
 
-    result = []
-    real_blender = []
+      result = []
+      real_blender = []
 
-    for i in range(len(all_bbox)):
-        result_mean = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[0]        # result_median = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[1]
-        result.append(result_mean)
-    
-    for j in range(len(labels)):
-        objPos_file = f"{depth_model}/target_location/{object_movement}/{object_movement}_{labels[j]}.txt"
-        real_blender.append(blenderDist(camPos_file, objPos_file))
-    
-    if graph:
-        graph_plot(result, real_blender, object_movement, labels)
+      for i in range(len(all_bbox)):
+          result_mean = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[0]        # result_median = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[1]
+          result.append(result_mean)
+      
+      for j in range(len(labels)):
+          objPos_file = f"{depth_model}/target_location/{object_movement}/{object_movement}_{labels[j]}.txt"
+          real_blender.append(blenderDist(camPos_file, objPos_file))
+      
+      if graph:
+          graph_plot(result, real_blender, object_movement, labels)
+
+    elif depth_model == 'midas':
+       get_bbox(depth_model, object_movement)
 
     return result
 
@@ -50,6 +55,36 @@ def process_annotations(annotated_file_path, object_movement):
     root = tree.getroot()
 
     pattern = f"depth_anywhere/target_location/{object_movement}/{object_movement}_*.txt"
+    matchFiles = glob.glob(pattern)
+
+    # grabLabels gets all labels we want in array ['blade', 'pommel', ...]
+    grabLabels = [os.path.basename(file).replace(f"{object_movement}_", "").replace(".txt", "") for file in matchFiles]
+    labelsMap = {} # labels : index
+    bboxes = []    # [[x1, y1, x2, y2], [...], ...]
+    
+    for i in range(len(grabLabels)):
+        labelsMap[grabLabels[i]] = i
+        bboxes.append([grabLabels[i]])
+
+    # Iterate over each <image> element
+    for image in root.findall('image'):
+        image_name = image.get('name')
+
+        # Iterate over each <box> element within the <image>
+        for box in image.findall('box'):
+            label = box.get('label')
+            xtl = int(float(box.get('xtl')))
+            ytl = int(float(box.get('ytl')))
+            xbr = int(float(box.get('xbr')))
+            ybr = int(float(box.get('ybr')))
+
+            idx = labelsMap[label]
+
+            bboxes[idx].append([image_name[1:4], [xtl + 1, ytl + 1, xbr, ybr]])
+    return (bboxes, grabLabels)
+
+def get_bbox(depth_model, object_movement):
+    pattern = f"{depth_model}/target_location/{object_movement}/{object_movement}_*.txt"
     matchFiles = glob.glob(pattern)
 
     # grabLabels gets all labels we want in array ['blade', 'pommel', ...]
@@ -180,3 +215,11 @@ def blenderDist(camPos_file, objPos_file):
   # Normalizing data based on Frame 50 out of 100
   norm_blender = normalizeData(blenderDist, 50)
   return norm_blender
+
+def read_pfm(fileName):
+  loader = PFMLoader(color=False, compress=False)
+  pfm_data = loader.load_pfm(fileName)
+
+  return pfm_data
+
+read_pfm("0001-dpt_beit_base_384.pfm")

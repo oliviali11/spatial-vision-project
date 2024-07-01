@@ -1,3 +1,5 @@
 *.pfm
 *.pt
-*.png
+*.pyc
+*.h
+*.cuh

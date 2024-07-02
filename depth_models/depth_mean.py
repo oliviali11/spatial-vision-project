@@ -230,5 +230,3 @@ def read_pfm(fileName):
 
   return pfm_data
 
-read_pfm("0001-dpt_beit_base_384.pfm")
-

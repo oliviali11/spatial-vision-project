@@ -1,0 +1,6 @@
+*.pfm
+*.pt
+*.pyc
+*.h
+*.cuh
+venv/

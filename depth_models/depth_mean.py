@@ -223,3 +223,12 @@ def blenderDist(camPos_file, objPos_file):
   # Normalizing data based on Frame 50 out of 100
   norm_blender = normalizeData(blenderDist, 50)
   return norm_blender
+
+def read_pfm(fileName):
+  loader = PFMLoader(color=False, compress=False)
+  pfm_data = loader.load_pfm(fileName)
+
+  return pfm_data
+
+read_pfm("0001-dpt_beit_base_384.pfm")
+

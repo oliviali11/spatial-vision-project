@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>1018316</id>
+      <size>21</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-07-09 22:12:24.829290+00:00</created>
+      <updated>2024-07-09 22:36:33.863162+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>20</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>1020279</id>
+          <start>0</start>
+          <stop>20</stop>
+          <url>https://app.cvat.ai/api/jobs/1018316</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>jessica3</username>
+        <email>jeshuang@g.hmc.edu</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>pommel</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>handle</name>
+          <color>#ff6a4d</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>blade</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>rock</name>
+          <color>#8c78f0</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>logo</name>
+          <color>#2acdcf</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>dashboard</name>
+          <color>#ffcc33</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>top</name>
+          <color>#34d1b7</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>leftmirror</name>
+          <color>#ff6037</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>conetip</name>
+          <color>#a798ff</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>firstorange</name>
+          <color>#3d3df5</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>firstwhite</name>
+          <color>#8772ef</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>secondwhite</name>
+          <color>#ff007c</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-07-09 23:17:16.806735+00:00</dumped>
+  </meta>
+  <image id="0" name="0001.png" width="1080" height="1080">
+    <box label="firstorange" source="manual" occluded="0" xtl="221.97" ytl="693.66" xbr="233.90" ybr="703.86" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="224.37" ytl="676.71" xbr="235.17" ybr="685.41" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="228.90" ytl="649.90" xbr="233.90" ybr="655.50" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="216.90" ytl="713.50" xbr="233.30" ybr="724.20" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.32" ytl="653.50" xbr="552.68" ybr="673.18" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="594.80" ytl="584.50" xbr="608.80" ybr="591.70" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="533.50" ytl="539.80" xbr="547.60" ybr="545.70" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="354.40" ytl="574.70" xbr="364.10" ybr="580.90" z_order="0">
+    </box>
+  </image>
+  <image id="1" name="0005.png" width="1080" height="1080">
+    <box label="conetip" source="manual" occluded="0" xtl="219.27" ytl="649.76" xbr="224.27" ybr="655.36" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="212.56" ytl="695.05" xbr="224.48" ybr="705.24" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="528.74" ytl="529.40" xbr="551.20" ybr="537.20" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="349.36" ytl="568.70" xbr="359.06" ybr="574.90" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="596.58" ytl="585.16" xbr="610.58" ybr="592.36" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.37" ytl="668.21" xbr="552.73" ybr="687.89" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="214.27" ytl="677.76" xbr="225.07" ybr="686.46" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="208.63" ytl="716.27" xbr="225.03" ybr="726.97" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="0010.png" width="1080" height="1080">
+    <box label="firstwhite" source="manual" occluded="0" xtl="203.77" ytl="677.76" xbr="214.57" ybr="686.46" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="208.57" ytl="649.26" xbr="213.57" ybr="654.86" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="198.78" ytl="717.48" xbr="215.18" ybr="728.18" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="597.98" ytl="586.16" xbr="611.98" ybr="593.36" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.67" ytl="688.61" xbr="553.03" ybr="708.29" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="529.05" ytl="516.65" xbr="551.52" ybr="524.45" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="202.77" ytl="696.06" xbr="214.69" ybr="706.25" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="342.16" ytl="558.30" xbr="351.86" ybr="564.50" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="0015.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="335.66" ytl="548.30" xbr="345.36" ybr="554.50" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.37" ytl="709.31" xbr="553.73" ybr="728.99" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="193.55" ytl="695.34" xbr="205.47" ybr="705.53" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="526.95" ytl="499.55" xbr="553.00" ybr="511.20" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="198.07" ytl="645.66" xbr="203.07" ybr="651.26" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="194.77" ytl="676.96" xbr="205.57" ybr="685.66" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="599.18" ytl="584.96" xbr="615.80" ybr="595.00" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="189.79" ytl="716.96" xbr="206.19" ybr="727.66" z_order="0">
+    </box>
+  </image>
+  <image id="4" name="0020.png" width="1080" height="1080">
+    <box label="conetip" source="manual" occluded="0" xtl="190.27" ytl="641.56" xbr="195.27" ybr="647.16" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="527.36" ytl="482.82" xbr="553.41" ybr="494.47" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="329.44" ytl="534.70" xbr="339.14" ybr="540.90" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="601.18" ytl="584.26" xbr="620.30" ybr="594.80" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="187.07" ytl="672.96" xbr="197.87" ybr="681.66" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.77" ytl="729.21" xbr="553.13" ybr="748.89" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="183.75" ytl="713.85" xbr="200.15" ybr="724.55" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="186.93" ytl="692.60" xbr="198.85" ybr="702.80" z_order="0">
+    </box>
+  </image>
+  <image id="5" name="0025.png" width="1080" height="1080">
+    <box label="logo" source="manual" occluded="0" xtl="528.87" ytl="748.11" xbr="553.23" ybr="767.79" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="183.27" ytl="635.16" xbr="188.27" ybr="640.76" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="324.16" ytl="518.50" xbr="333.86" ybr="524.70" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="181.87" ytl="666.96" xbr="192.67" ybr="675.66" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="601.72" ytl="583.39" xbr="620.84" ybr="593.93" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="527.06" ytl="464.62" xbr="553.11" ybr="476.27" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="179.08" ytl="707.97" xbr="195.48" ybr="718.67" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="181.17" ytl="686.55" xbr="193.09" ybr="696.75" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="0030.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="319.96" ytl="501.82" xbr="329.66" ybr="508.02" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="178.37" ytl="657.66" xbr="189.17" ybr="666.36" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="179.15" ytl="677.05" xbr="191.07" ybr="687.25" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="177.18" ytl="698.12" xbr="193.58" ybr="708.82" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.27" ytl="762.61" xbr="551.70" ybr="784.70" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="603.72" ytl="581.89" xbr="622.84" ybr="592.43" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="523.86" ytl="441.62" xbr="555.70" ybr="457.00" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="178.97" ytl="626.46" xbr="183.97" ybr="632.06" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="0035.png" width="1080" height="1080">
+    <box label="firstorange" source="manual" occluded="0" xtl="178.72" ytl="665.67" xbr="190.64" ybr="675.87" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="177.07" ytl="646.56" xbr="187.87" ybr="655.26" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="177.70" ytl="685.34" xbr="194.10" ybr="696.04" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="604.52" ytl="578.09" xbr="623.64" ybr="588.63" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="316.60" ytl="485.38" xbr="326.30" ybr="491.58" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="177.27" ytl="615.76" xbr="182.27" ybr="621.36" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="523.87" ytl="420.26" xbr="555.70" ybr="435.64" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.33" ytl="773.60" xbr="551.76" ybr="795.69" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="0040.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="604.52" ytl="573.34" xbr="625.20" ybr="587.20" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.00" ytl="403.30" xbr="549.91" ybr="413.44" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="180.45" ytl="650.27" xbr="192.37" ybr="660.46" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="180.95" ytl="670.04" xbr="197.35" ybr="680.74" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="179.87" ytl="632.86" xbr="190.67" ybr="641.56" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="314.80" ytl="468.82" xbr="324.50" ybr="475.02" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="177.57" ytl="603.06" xbr="182.57" ybr="608.66" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.33" ytl="780.50" xbr="551.76" ybr="802.59" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="0045.png" width="1080" height="1080">
+    <box label="logo" source="manual" occluded="0" xtl="529.23" ytl="781.10" xbr="551.66" ybr="803.19" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.13" ytl="384.78" xbr="550.04" ybr="394.92" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="181.07" ytl="590.76" xbr="186.07" ybr="596.36" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="183.18" ytl="617.96" xbr="193.98" ybr="626.66" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="186.75" ytl="652.44" xbr="203.15" ybr="663.14" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="185.77" ytl="634.86" xbr="197.70" ybr="645.05" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="603.83" ytl="568.78" xbr="624.51" ybr="582.64" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="314.68" ytl="452.86" xbr="324.38" ybr="459.06" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="0050.png" width="1080" height="1080">
+    <box label="top" source="manual" occluded="0" xtl="530.23" ytl="368.98" xbr="550.14" ybr="379.12" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="194.65" ytl="636.64" xbr="208.10" ybr="645.20" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="602.79" ytl="562.38" xbr="623.47" ybr="576.25" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="315.04" ytl="437.26" xbr="324.74" ybr="443.46" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.03" ytl="776.90" xbr="551.46" ybr="799.00" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="194.27" ytl="620.72" xbr="202.62" ybr="627.34" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="189.47" ytl="602.56" xbr="200.28" ybr="611.26" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="186.77" ytl="576.56" xbr="191.77" ybr="582.16" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="0055.png" width="1080" height="1080">
+    <box label="logo" source="manual" occluded="0" xtl="529.33" ytl="769.80" xbr="551.76" ybr="791.89" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="198.18" ytl="587.26" xbr="208.98" ybr="595.96" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="202.25" ytl="603.95" xbr="210.60" ybr="610.58" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="203.62" ytl="618.41" xbr="217.07" ybr="626.97" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="318.04" ytl="424.78" xbr="327.74" ybr="430.98" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.33" ytl="356.38" xbr="550.24" ybr="366.52" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="194.37" ytl="563.46" xbr="199.37" ybr="569.06" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="600.37" ytl="557.37" xbr="621.05" ybr="571.23" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="0060.png" width="1080" height="1080">
+    <box label="top" source="manual" occluded="0" xtl="530.73" ytl="346.68" xbr="550.64" ybr="356.82" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="203.87" ytl="551.36" xbr="208.87" ybr="556.96" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="320.92" ytl="415.18" xbr="330.62" ybr="421.38" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="213.42" ytl="600.71" xbr="226.87" ybr="609.27" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="212.91" ytl="588.40" xbr="221.25" ybr="595.03" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="207.38" ytl="572.56" xbr="218.18" ybr="581.26" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.93" ytl="758.40" xbr="551.36" ybr="780.50" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="598.47" ytl="551.67" xbr="619.15" ybr="565.53" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="0065.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="596.22" ytl="546.83" xbr="616.91" ybr="560.69" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="219.34" ytl="561.30" xbr="226.50" ybr="567.52" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="529.73" ytl="341.28" xbr="549.64" ybr="351.42" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="223.13" ytl="573.57" xbr="231.48" ybr="580.19" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="225.52" ytl="585.71" xbr="235.80" ybr="593.50" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="214.57" ytl="540.66" xbr="219.57" ybr="546.26" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="324.88" ytl="407.74" xbr="334.58" ybr="413.94" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="531.23" ytl="747.60" xbr="549.40" ybr="767.00" z_order="0">
+    </box>
+  </image>
+  <image id="14" name="0070.png" width="1080" height="1080">
+    <box label="logo" source="manual" occluded="0" xtl="530.77" ytl="734.05" xbr="548.93" ybr="753.45" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="238.80" ytl="571.50" xbr="247.59" ybr="578.10" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="231.07" ytl="549.46" xbr="238.22" ybr="555.67" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="234.22" ytl="560.47" xbr="242.57" ybr="567.09" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="594.67" ytl="543.03" xbr="615.35" ybr="556.89" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="225.57" ytl="530.86" xbr="230.57" ybr="536.46" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.53" ytl="338.68" xbr="550.44" ybr="348.82" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="331.00" ytl="403.06" xbr="340.70" ybr="409.26" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="0075.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="592.25" ytl="539.40" xbr="612.93" ybr="553.26" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="249.55" ytl="559.29" xbr="258.34" ybr="565.89" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="237.27" ytl="523.36" xbr="242.27" ybr="528.96" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="337.96" ytl="399.94" xbr="347.66" ybr="406.14" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="531.06" ytl="720.45" xbr="549.23" ybr="739.85" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="242.77" ytl="538.86" xbr="249.92" ybr="545.07" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="246.94" ytl="550.13" xbr="253.34" ybr="555.54" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.73" ytl="338.08" xbr="550.64" ybr="348.22" z_order="0">
+    </box>
+  </image>
+  <image id="16" name="0080.png" width="1080" height="1080">
+    <box label="firstorange" source="manual" occluded="0" xtl="258.11" ytl="540.17" xbr="264.51" ybr="545.58" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="248.77" ytl="515.86" xbr="253.77" ybr="521.46" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.33" ytl="340.38" xbr="550.24" ybr="350.52" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="260.35" ytl="548.89" xbr="267.90" ybr="554.30" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="588.45" ytl="536.29" xbr="609.13" ybr="550.15" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="255.17" ytl="531.10" xbr="260.90" ybr="536.47" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="345.04" ytl="400.18" xbr="354.74" ybr="406.38" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="531.76" ytl="708.65" xbr="548.20" ybr="725.20" z_order="0">
+    </box>
+  </image>
+  <image id="17" name="0085.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="586.55" ytl="533.70" xbr="607.23" ybr="547.56" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="269.63" ytl="532.49" xbr="275.30" ybr="537.10" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="531.93" ytl="696.07" xbr="548.37" ybr="712.62" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="266.58" ytl="523.98" xbr="272.31" ybr="529.35" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.03" ytl="344.48" xbr="549.94" ybr="354.62" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="352.12" ytl="400.06" xbr="361.82" ybr="406.26" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="272.37" ytl="539.49" xbr="279.92" ybr="544.90" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="261.47" ytl="511.66" xbr="265.60" ybr="516.10" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="0090.png" width="1080" height="1080">
+    <box label="firstorange" source="manual" occluded="0" xtl="282.24" ytl="525.81" xbr="287.20" ybr="529.60" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="583.91" ytl="532.18" xbr="604.59" ybr="546.04" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="272.40" ytl="506.94" xbr="276.53" ybr="511.38" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="531.93" ytl="684.37" xbr="548.37" ybr="700.92" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.33" ytl="348.98" xbr="550.24" ybr="359.12" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="284.07" ytl="532.89" xbr="290.20" ybr="536.70" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="277.38" ytl="518.80" xbr="282.20" ybr="523.25" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="358.60" ytl="401.98" xbr="368.30" ybr="408.18" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="0095.png" width="1080" height="1080">
+    <box label="top" source="manual" occluded="0" xtl="530.43" ytl="354.98" xbr="550.34" ybr="365.12" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="289.33" ytl="514.14" xbr="293.10" ybr="517.80" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="532.13" ytl="673.07" xbr="548.57" ybr="689.62" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="283.51" ytl="504.34" xbr="287.64" ybr="508.78" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="582.61" ytl="530.18" xbr="600.20" ybr="542.00" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="366.04" ytl="403.54" xbr="375.74" ybr="409.74" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="291.48" ytl="520.41" xbr="296.40" ybr="523.90" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="294.68" ytl="526.08" xbr="300.81" ybr="529.90" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="0100.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="373.48" ytl="406.78" xbr="383.18" ybr="412.98" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="533.43" ytl="664.97" xbr="546.70" ybr="678.60" z_order="0">
+    </box>
+    <box label="firstwhite" source="manual" occluded="0" xtl="299.16" ytl="510.33" xbr="302.93" ybr="514.00" z_order="0">
+    </box>
+    <box label="secondwhite" source="manual" occluded="0" xtl="304.38" ytl="520.58" xbr="310.51" ybr="524.40" z_order="0">
+    </box>
+    <box label="firstorange" source="manual" occluded="0" xtl="302.05" ytl="515.93" xbr="306.97" ybr="519.42" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.23" ytl="360.88" xbr="550.14" ybr="371.02" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="580.55" ytl="528.60" xbr="598.14" ybr="540.42" z_order="0">
+    </box>
+    <box label="conetip" source="manual" occluded="0" xtl="294.80" ytl="501.04" xbr="298.94" ybr="505.48" z_order="0">
+    </box>
+  </image>
+</annotations>

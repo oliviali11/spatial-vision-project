@@ -47,7 +47,7 @@ def graph_plot(data, real_blender, graph_title, labels):
     plt.xlabel('Frame')
     plt.ylabel('Normalized Depth')
     x = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
-    colors = ['r','y','g','c','m','b','k', 'orange', 'purple', 'brown']
+    colors = ['r','orange','y','g','c','b','m','purple', 'brown','k']
 
     for i in range(len(data)):
         plt.plot(x[:len(data[i])], data[i], colors[i], label=labels[i])
@@ -129,18 +129,28 @@ def depth_mean_midas(bbox, depth_path, depth_fend):
 
   for i in range(size_bbox):
       index = bbox[i][0]
-      # print(depth_path + index + depth_fend)
       
       dimg = read_pfm(depth_path + index + depth_fend)
-
+    
       i_coords = bbox[i][1]
       depth_patch = dimg[i_coords[0]:i_coords[2],i_coords[1]:i_coords[3]]
 
       depth_mean[i] = np.mean(depth_patch)
       depth_median[i] = np.median(depth_patch)
 
+
+  if depth_mean[frameRef] == 0:
+     if depth_median[frameRef] != 0:
+        print("Setting depth_mean to median to accomodate 0 depth value")
+        depth_mean[frameRef] = depth_median[frameRef]
+     else:
+        print("Setting frame ref mean to 1 since mean + median are both 0")
+        depth_mean[frameRef] = 1
+
+
   normalized_mean = [x/depth_mean[frameRef] for x in depth_mean]
-  normalized_median = [x/depth_median[frameRef] for x in depth_median]
+  # normalized_median = [x/depth_median[frameRef] for x in depth_median]
+  normalized_median = []
 
   return (normalized_mean, normalized_median)
 
@@ -208,6 +218,13 @@ def makeCameraTranslation(txtfile):
   return camTranslation
 
 def normalizeData(data, frameRef):
+  # if data[frameRef] == 0:
+  #    if data[frameRef] != 0:
+  #       print("Setting depth_mean to median to accomodate 0 depth value")
+  #       data[frameRef] = data[frameRef]
+  #    else:
+  #       print("Setting frame ref mean to 1 since mean + median are both 0")
+  #       data[frameRef] = 1
   result = [x/data[frameRef] for x in data]
   return result
 

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotations>
+  <version>1.1</version>
+  <meta>
+    <job>
+      <id>1017863</id>
+      <size>21</size>
+      <mode>annotation</mode>
+      <overlap>0</overlap>
+      <bugtracker></bugtracker>
+      <created>2024-07-09 18:06:41.147024+00:00</created>
+      <updated>2024-07-09 18:17:17.194886+00:00</updated>
+      <subset>default</subset>
+      <start_frame>0</start_frame>
+      <stop_frame>20</stop_frame>
+      <frame_filter></frame_filter>
+      <segments>
+        <segment>
+          <id>1019825</id>
+          <start>0</start>
+          <stop>20</stop>
+          <url>https://app.cvat.ai/api/jobs/1017863</url>
+        </segment>
+      </segments>
+      <owner>
+        <username>jessica3</username>
+        <email>jeshuang@g.hmc.edu</email>
+      </owner>
+      <assignee></assignee>
+      <labels>
+        <label>
+          <name>pommel</name>
+          <color>#ff007c</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>handle</name>
+          <color>#ff6a4d</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>blade</name>
+          <color>#33ddff</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>rock</name>
+          <color>#8c78f0</color>
+          <type>rectangle</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>logo</name>
+          <color>#2acdcf</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>dashboard</name>
+          <color>#ffcc33</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>top</name>
+          <color>#34d1b7</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+        <label>
+          <name>leftmirror</name>
+          <color>#ff6037</color>
+          <type>any</type>
+          <attributes>
+          </attributes>
+        </label>
+      </labels>
+    </job>
+    <dumped>2024-07-09 18:17:39.391583+00:00</dumped>
+  </meta>
+  <image id="0" name="0001.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="352.90" ytl="574.80" xbr="365.10" ybr="581.60" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="594.64" ytl="585.15" xbr="606.45" ybr="591.05" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.10" ytl="653.30" xbr="550.80" ybr="672.20" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="533.08" ytl="540.02" xbr="546.90" ybr="545.63" z_order="0">
+    </box>
+  </image>
+  <image id="1" name="0005.png" width="1080" height="1080">
+    <box label="logo" source="manual" occluded="0" xtl="528.59" ytl="668.22" xbr="551.29" ybr="687.12" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="347.58" ytl="568.58" xbr="359.78" ybr="575.38" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="531.34" ytl="530.44" xbr="548.60" ybr="537.10" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="597.22" ytl="585.79" xbr="609.03" ybr="591.69" z_order="0">
+    </box>
+  </image>
+  <image id="2" name="0010.png" width="1080" height="1080">
+    <box label="top" source="manual" occluded="0" xtl="528.76" ytl="515.66" xbr="552.30" ybr="524.72" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.76" ytl="689.48" xbr="551.46" ybr="708.38" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="340.68" ytl="558.58" xbr="352.88" ybr="565.38" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="598.66" ytl="586.51" xbr="612.10" ybr="594.30" z_order="0">
+    </box>
+  </image>
+  <image id="3" name="0015.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="334.58" ytl="547.38" xbr="346.78" ybr="554.18" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="528.22" ytl="501.06" xbr="551.75" ybr="510.13" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="600.44" ytl="586.72" xbr="613.88" ybr="594.51" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.28" ytl="709.52" xbr="551.98" ybr="728.42" z_order="0">
+    </box>
+  </image>
+  <image id="4" name="0020.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="602.89" ytl="586.57" xbr="616.33" ybr="594.37" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="528.22" ytl="483.64" xbr="551.75" ybr="492.71" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="327.98" ytl="533.88" xbr="340.18" ybr="540.68" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.80" ytl="729.74" xbr="552.50" ybr="748.64" z_order="0">
+    </box>
+  </image>
+  <image id="5" name="0025.png" width="1080" height="1080">
+    <box label="logo" source="manual" occluded="0" xtl="529.46" ytl="747.89" xbr="552.16" ybr="766.79" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="524.76" ytl="462.33" xbr="555.40" ybr="476.10" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="321.40" ytl="514.90" xbr="336.18" ybr="526.88" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="604.33" ytl="583.26" xbr="618.60" ybr="593.35" z_order="0">
+    </box>
+  </image>
+  <image id="6" name="0030.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="318.49" ytl="496.89" xbr="333.27" ybr="508.88" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="606.07" ytl="580.82" xbr="620.34" ybr="590.90" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.94" ytl="763.61" xbr="551.64" ybr="782.51" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="524.95" ytl="442.41" xbr="555.59" ybr="456.18" z_order="0">
+    </box>
+  </image>
+  <image id="7" name="0035.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="314.99" ytl="480.29" xbr="329.77" ybr="492.28" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="524.81" ytl="421.53" xbr="555.45" ybr="435.30" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="607.08" ytl="578.23" xbr="621.35" ybr="588.31" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.28" ytl="775.19" xbr="551.98" ybr="794.09" z_order="0">
+    </box>
+  </image>
+  <image id="8" name="0040.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="313.39" ytl="464.09" xbr="328.17" ybr="476.08" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="527.36" ytl="401.80" xbr="552.42" ybr="414.40" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.94" ytl="780.55" xbr="551.64" ybr="799.45" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="607.22" ytl="573.76" xbr="621.50" ybr="583.85" z_order="0">
+    </box>
+  </image>
+  <image id="9" name="0045.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="606.07" ytl="568.87" xbr="620.34" ybr="578.95" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.94" ytl="781.93" xbr="551.64" ybr="800.83" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.95" ytl="385.55" xbr="550.21" ybr="394.54" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="312.39" ytl="446.79" xbr="327.17" ybr="458.78" z_order="0">
+    </box>
+  </image>
+  <image id="10" name="0050.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="312.29" ytl="431.99" xbr="327.07" ybr="443.98" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.21" ytl="369.34" xbr="549.47" ybr="378.33" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.76" ytl="778.13" xbr="551.46" ybr="797.03" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="604.92" ytl="563.68" xbr="619.19" ybr="573.77" z_order="0">
+    </box>
+  </image>
+  <image id="11" name="0055.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="603.48" ytl="557.92" xbr="617.75" ybr="568.01" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="314.99" ytl="419.29" xbr="329.77" ybr="431.28" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.94" ytl="770.35" xbr="551.64" ybr="789.25" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.21" ytl="356.81" xbr="549.47" ybr="365.80" z_order="0">
+    </box>
+  </image>
+  <image id="12" name="0060.png" width="1080" height="1080">
+    <box label="leftmirror" source="manual" occluded="0" xtl="319.09" ytl="409.99" xbr="333.87" ybr="421.98" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.46" ytl="760.15" xbr="552.16" ybr="779.05" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="602.33" ytl="553.17" xbr="616.60" ybr="563.26" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.64" ytl="346.73" xbr="549.90" ybr="355.72" z_order="0">
+    </box>
+  </image>
+  <image id="13" name="0065.png" width="1080" height="1080">
+    <box label="logo" source="manual" occluded="0" xtl="528.59" ytl="746.33" xbr="551.29" ybr="765.23" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.21" ytl="340.54" xbr="549.47" ybr="349.53" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="323.99" ytl="402.59" xbr="338.77" ybr="414.58" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="599.02" ytl="548.28" xbr="613.29" ybr="558.36" z_order="0">
+    </box>
+  </image>
+  <image id="14" name="0070.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="597.00" ytl="544.24" xbr="611.27" ybr="554.33" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.79" ytl="338.38" xbr="550.04" ybr="347.37" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="329.79" ytl="398.49" xbr="344.57" ybr="410.48" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.76" ytl="734.23" xbr="551.46" ybr="753.13" z_order="0">
+    </box>
+  </image>
+  <image id="15" name="0075.png" width="1080" height="1080">
+    <box label="top" source="manual" occluded="0" xtl="530.50" ytl="338.53" xbr="549.76" ybr="347.52" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="594.12" ytl="540.21" xbr="608.39" ybr="550.30" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.94" ytl="720.07" xbr="551.64" ybr="738.97" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="336.19" ytl="394.89" xbr="350.97" ybr="406.88" z_order="0">
+    </box>
+  </image>
+  <image id="16" name="0080.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="590.95" ytl="536.47" xbr="605.22" ybr="546.55" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="529.01" ytl="706.01" xbr="551.71" ybr="724.91" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="343.29" ytl="393.19" xbr="358.07" ybr="405.18" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.35" ytl="340.25" xbr="549.61" ybr="349.24" z_order="0">
+    </box>
+  </image>
+  <image id="17" name="0085.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="588.79" ytl="534.60" xbr="603.06" ybr="544.68" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.78" ytl="693.77" xbr="551.48" ybr="712.67" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.35" ytl="344.72" xbr="549.61" ybr="353.71" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="350.59" ytl="393.39" xbr="365.37" ybr="405.38" z_order="0">
+    </box>
+  </image>
+  <image id="18" name="0090.png" width="1080" height="1080">
+    <box label="dashboard" source="manual" occluded="0" xtl="586.20" ytl="532.58" xbr="600.47" ybr="542.66" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="528.30" ytl="681.29" xbr="551.00" ybr="700.19" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="356.89" ytl="394.89" xbr="371.67" ybr="406.88" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="530.79" ytl="349.33" xbr="550.04" ybr="358.32" z_order="0">
+    </box>
+  </image>
+  <image id="19" name="0095.png" width="1080" height="1080">
+    <box label="logo" source="manual" occluded="0" xtl="532.86" ytl="675.74" xbr="547.00" ybr="687.35" z_order="0">
+    </box>
+    <box label="top" source="manual" occluded="0" xtl="531.22" ytl="355.81" xbr="550.48" ybr="364.80" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="583.46" ytl="530.56" xbr="597.74" ybr="540.65" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="364.59" ytl="397.59" xbr="379.37" ybr="409.58" z_order="0">
+    </box>
+  </image>
+  <image id="20" name="0100.png" width="1080" height="1080">
+    <box label="top" source="manual" occluded="0" xtl="530.64" ytl="361.28" xbr="549.90" ybr="370.27" z_order="0">
+    </box>
+    <box label="logo" source="manual" occluded="0" xtl="533.19" ytl="665.73" xbr="547.32" ybr="677.34" z_order="0">
+    </box>
+    <box label="leftmirror" source="manual" occluded="0" xtl="372.50" ytl="403.90" xbr="384.17" ybr="414.18" z_order="0">
+    </box>
+    <box label="dashboard" source="manual" occluded="0" xtl="581.59" ytl="529.12" xbr="595.86" ybr="539.21" z_order="0">
+    </box>
+  </image>
+</annotations>

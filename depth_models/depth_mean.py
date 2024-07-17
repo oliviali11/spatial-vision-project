@@ -180,8 +180,8 @@ def process_multiple_annotations(annotated_file_path, object_movement, compare):
             elif label in object2_Map:
               idx = object2_Map[label]
               object2_bboxes[idx].append([image_name[1:4], [xtl + 1, ytl + 1, xbr, ybr]])
-            else:
-               print(label)
+            # else:
+            #    print(label)
 
     # print(object1_bboxes)
     # print(object2_bboxes)

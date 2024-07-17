@@ -9,37 +9,79 @@ from pypfm import PFMLoader
 
 
 
-def depth_process(depth_model, object_movement, weight="-dpt_beit_base_384.pfm", graph = True):
+def depth_process(depth_model, object_movement, weight="-dpt_beit_base_384.pfm", graph = True, compare = []):
       annotated_file_path = f"depth_anywhere/annotated/{object_movement}/{object_movement}_annotated.xml"
       depth_path = f"depth_anywhere/depth_array/{object_movement}/0"
       depth_fend = "_depth.npy"
       camPos_file = f"depth_anywhere/cam_position/{object_movement}_camposition.txt"
-
-      (all_bbox, labels) = process_annotations(annotated_file_path, object_movement)
-
-      result = []
       real_blender = []
-
-      if depth_model == 'midas':
-        for i in range(len(all_bbox)):
-          depth_path = f"midas/midas/pfm_file/{object_movement}/0"
-          depth_fend = weight
-          result_mean = depth_mean_midas(all_bbox[i][1:], depth_path, depth_fend)[0]
-          result.append(result_mean)
       
-      elif depth_model == 'depth_anywhere':
-        for i in range(len(all_bbox)):
-            result_mean = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[0]        # result_median = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[1]
+
+      # Only 1 main object; normalize off middle frame
+      if compare == []:
+        (all_bbox, labels) = process_annotations(annotated_file_path, object_movement)
+        result = []
+        
+
+        if depth_model == 'midas':
+          for i in range(len(all_bbox)):
+            depth_path = f"midas/midas/pfm_file/{object_movement}/0"
+            depth_fend = weight
+            result_mean = depth_mean_midas(all_bbox[i][1:], depth_path, depth_fend)[0]
             result.append(result_mean)
         
-      for j in range(len(labels)):
-          objPos_file = f"depth_anywhere/target_location/{object_movement}/{object_movement}_{labels[j]}.txt"
-          real_blender.append(blenderDist(camPos_file, objPos_file))
-      
-      if graph:
-          title = depth_model + " " + object_movement
-          graph_plot(result, real_blender, title, labels)
+        elif depth_model == 'depth_anywhere':
+          for i in range(len(all_bbox)):
+              result_mean = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[0]        # result_median = depth_median_mean(all_bbox[i][1:], depth_path, depth_fend)[1]
+              result.append(result_mean)
+          
+        for j in range(len(labels)):
+            objPos_file = f"depth_anywhere/target_location/{object_movement}/{object_movement}_{labels[j]}.txt"
+            real_blender.append(blenderDist(camPos_file, objPos_file))
+        
+        if graph:
+            title = depth_model + " " + object_movement
+            graph_plot(result, real_blender, title, labels)
+     
+      # multiple main objects to compare
+      else:
+         (bbox1, bbox2) = process_multiple_annotations(annotated_file_path, object_movement, compare)
+         result = []
+        #  real_blender = []
 
+        #  if depth_model == 'midas':
+        #   for i in range(len(all_bbox)):
+        #     depth_path = f"midas/midas/pfm_file/{object_movement}/0"
+        #     depth_fend = weight
+        #     result_mean = depth_mean_midas(all_bbox[i][1:], depth_path, depth_fend)[0]
+        #     result.append(result_mean)
+        
+         if depth_model == 'depth_anywhere':
+          result_mean1 = []
+          result_mean2 = []
+          compnames = []
+
+          for i in range(len(bbox1)):
+              result_mean1.append(depth_median_mean(bbox1[i][1:], depth_path, depth_fend)[0])
+              result_mean2.append(depth_median_mean(bbox2[i][1:], depth_path, depth_fend)[0])
+              compareNames = bbox1[i][0] + '-' + bbox2[i][0]
+              compnames.append(compareNames)
+
+          normalizedValues = []
+          for j in range(len(result_mean1)):
+             newArr = []
+             min_len = min(len(result_mean1[j]), len(result_mean2[j]))
+             for k in range(min_len):
+                if result_mean1[j][k] == 0 and result_mean2[j][k] == 0:
+                    newArr.append(1)
+                elif result_mean1[j][k] == 0:
+                    newArr.append(result_mean2[j][k])
+                elif result_mean2[j][k] == 0:
+                    newArr.append(result_mean1[j][k]) 
+                else:
+                    newArr.append(result_mean1[j][k]/result_mean2[j][k])
+             normalizedValues.append(newArr)
+          graph_plot(normalizedValues, real_blender, object_movement, compnames)
       return result
 
 def graph_plot(data, real_blender, graph_title, labels):
@@ -89,6 +131,67 @@ def process_annotations(annotated_file_path, object_movement):
 
             bboxes[idx].append([image_name[1:4], [xtl + 1, ytl + 1, xbr, ybr]])
     return (bboxes, grabLabels)
+
+def process_multiple_annotations(annotated_file_path, object_movement, compare):
+    # compare = [[location_1a, location_1b], [location_2a, location_2b], ...]
+    tree = ET.parse(annotated_file_path)
+    root = tree.getroot()
+    firstobject, secondobject, temp = object_movement.split("_")
+
+    # Ex: pattern1 = "depth_anywhere/target_location/car_cone_panover/car_*.txt"
+    pattern1 = f"depth_anywhere/target_location/{object_movement}/{firstobject}_*.txt"
+    # matchFiles1 = glob.glob(pattern1)
+
+    # Ex: pattern2 = "depth_anywhere/target_location/car_cone_panover/cone_*.txt"
+    pattern2 = f"depth_anywhere/target_location/{object_movement}/{secondobject}_*.txt"
+    # matchFiles2 = glob.glob(pattern2)
+
+    # grabLabels gets all labels we want in array ['blade', 'pommel', ...]
+
+    # grabLabels = [os.path.basename(file).replace(f"{object_movement}_", "").replace(".txt", "") for file in matchFiles]
+    object1_Map = {} # labels : index
+    object1_bboxes = []    # [[x1, y1, x2, y2], [...], ...]
+
+    object2_Map = {} # labels : index
+    object2_bboxes = []    # [[x1, y1, x2, y2], [...], ...]
+    
+    for i in range(len(compare)):
+        object1_Map[compare[i][0]] = i
+        object2_Map[compare[i][1]] = i
+        object1_bboxes.append([compare[i][0]])
+        object2_bboxes.append([compare[i][1]])
+
+
+    # Iterate over each <image> element
+    for image in root.findall('image'):
+        image_name = image.get('name')
+
+        # Iterate over each <box> element within the <image>
+        for box in image.findall('box'):
+            label = box.get('label')
+            xtl = int(float(box.get('xtl')))
+            ytl = int(float(box.get('ytl')))
+            xbr = int(float(box.get('xbr')))
+            ybr = int(float(box.get('ybr')))
+
+            if label in object1_Map:
+              idx = object1_Map[label]
+              object1_bboxes[idx].append([image_name[1:4], [xtl + 1, ytl + 1, xbr, ybr]])
+            elif label in object2_Map:
+              idx = object2_Map[label]
+              object2_bboxes[idx].append([image_name[1:4], [xtl + 1, ytl + 1, xbr, ybr]])
+            else:
+               print(label)
+
+    # print(object1_bboxes)
+    # print(object2_bboxes)
+
+    # normalizedResult = []
+    # for i in range(len(object1_bboxes)):
+    #    compareName = object1_bboxes[i][0] + '-' + object2_bboxes[i][0]
+    return(object1_bboxes, object2_bboxes)
+       
+    # return (bboxes, grabLabels)
 
 def depth_median_mean(bbox, depth_path, depth_fend):
   
@@ -218,13 +321,6 @@ def makeCameraTranslation(txtfile):
   return camTranslation
 
 def normalizeData(data, frameRef):
-  # if data[frameRef] == 0:
-  #    if data[frameRef] != 0:
-  #       print("Setting depth_mean to median to accomodate 0 depth value")
-  #       data[frameRef] = data[frameRef]
-  #    else:
-  #       print("Setting frame ref mean to 1 since mean + median are both 0")
-  #       data[frameRef] = 1
   result = [x/data[frameRef] for x in data]
   return result
 
@@ -247,3 +343,8 @@ def read_pfm(fileName):
 
   return pfm_data
 
+# annotated_file_path = "depth_anywhere/annotated/car_cone_panover/car_cone_panover_annotated.xml"
+# process_multiple_annotations(annotated_file_path, "car_cone_panover", [["dashboard", "conetip"], ["leftmirror", "firstorange"], 
+#                                                                        ["logo", "firstwhite"], ["top", "secondwhite"]])
+# depth_process("depth_anywhere", "car_cone_panover", compare = [["dashboard", "conetip"], ["leftmirror", "firstorange"], 
+#                                                      ["logo", "firstwhite"], ["top", "secondwhite"]])

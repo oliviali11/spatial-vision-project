@@ -81,13 +81,22 @@ def depth_process(depth_model, object_movement, weight="-dpt_beit_base_384.pfm",
                 else:
                     newArr.append(result_mean1[j][k]/result_mean2[j][k])
              normalizedValues.append(newArr)
-          graph_plot(normalizedValues, real_blender, object_movement, compnames)
+
+          for k in range(len(compare)):
+            obj1, obj2, movement = object_movement.split("_")
+            obj1Pos_file = f"depth_anywhere/target_location/{object_movement}/{obj1}_{compare[k][0]}.txt"
+            obj2Pos_file = f"depth_anywhere/target_location/{object_movement}/{obj2}_{compare[k][1]}.txt"
+
+            real_blender.append(ratioblenderDist(camPos_file, obj1Pos_file, obj2Pos_file))
+          title = f"Depth Ratio for {object_movement}"
+
+          graph_plot(normalizedValues, real_blender, title, compnames, "Depth Ratio")
       return result
 
-def graph_plot(data, real_blender, graph_title, labels):
+def graph_plot(data, real_blender, graph_title, labels, y_axis = 'Normalized Depth'):
     plt.title(graph_title)
     plt.xlabel('Frame')
-    plt.ylabel('Normalized Depth')
+    plt.ylabel(y_axis)
     x = [0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100]
     colors = ['r','orange','y','g','c','b','m','purple', 'brown','k']
 
@@ -343,8 +352,24 @@ def read_pfm(fileName):
 
   return pfm_data
 
-# annotated_file_path = "depth_anywhere/annotated/car_cone_panover/car_cone_panover_annotated.xml"
-# process_multiple_annotations(annotated_file_path, "car_cone_panover", [["dashboard", "conetip"], ["leftmirror", "firstorange"], 
-#                                                                        ["logo", "firstwhite"], ["top", "secondwhite"]])
-# depth_process("depth_anywhere", "car_cone_panover", compare = [["dashboard", "conetip"], ["leftmirror", "firstorange"], 
-#                                                      ["logo", "firstwhite"], ["top", "secondwhite"]])
+            # real_blender.append(ratioblenderDist(camPos_file, obj1Pos_file, obj2Pos_file))
+
+# Given position of camera + object in Blender world, we can calculate the distance between the 2 coordinates
+def ratioblenderDist(camPos_file, obj1Pos_file, obj2Pos_file):
+  camPosition = makeCameraTranslation(camPos_file)
+  obj1Position = makeCameraTranslation(obj1Pos_file)
+  obj2Position = makeCameraTranslation(obj2Pos_file)
+
+  blenderDist = []
+
+  for i in range(len(camPosition)):
+    blenderDist.append(magnitude(findVec(camPosition[i], obj1Position[i])) / magnitude(findVec(camPosition[i], obj2Position[i])))
+  # Normalizing data based on Frame 50 out of 100
+  # norm_blender = normalizeData(blenderDist, 50)
+  return blenderDist
+
+def read_pfm(fileName):
+  loader = PFMLoader(color=False, compress=False)
+  pfm_data = loader.load_pfm(fileName)
+
+  return pfm_data

@@ -1,3 +1,0 @@
-../depth_models/depth_anywhere/original_img/car_cone_panover/0001.png
-../depth_models/depth_anywhere/original_img/car_cone_panover/0055.png
-../depth_models/depth_anywhere/original_img/car_cone_panover/0095.png

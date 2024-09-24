@@ -23,12 +23,14 @@ def create_brightness(loader, save_path=None, severity_levels=[]):
     for _, batch in enumerate(loader):
         image, name = batch
         image = image.squeeze().numpy()
+        full_path = name[0]
+        folder_name = os.path.basename(os.path.dirname(full_path))
         filename = os.path.basename(name[0])
         for severity in severity_levels:
             folder_path = os.path.join(save_path, corruption, str(severity))
             if not (os.path.isdir(folder_path)): os.makedirs(folder_path)
             corrupted = corrupt(image, corruption_name=corruption, severity=severity)
-            new_filename = f"{os.path.splitext(filename)[0]}_brightness_s{severity}.png"
+            new_filename = f"{folder_name}_{os.path.splitext(filename)[0]}_brightness_s{severity}.png"
 
             im_path = os.path.join(folder_path, new_filename)
             # Convert the corrupted image to a PIL image and save as PNG
